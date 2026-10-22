@@ -1,5 +1,7 @@
 # Human Endocrine System — Interactive 3D Learning Lab
 
+**Live:** https://endocrine-anatomy-lab.vercel.app
+
 A realistic, interactive 3D endocrine system for secondary-school and first-year biology:
 
 - **Real look.** A pinkish-grey pituitary in the saddle of the sphenoid, a deep red-brown lobulated thyroid with tan parathyroids, yellow adrenal cortex round a red-brown medulla, a lobulated pale pancreas, pale ovaries, red arteries, blue-purple veins and ivory bone; the brain and the organs around the glands faded. "Colour" switches to **Glands** (one colour per layer) or **Hormone class** (peptide, amine or steroid).

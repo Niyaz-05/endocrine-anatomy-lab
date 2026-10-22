@@ -51,6 +51,7 @@ Results recorded on 2026-10-22 on Windows 11, Node 22.14.0. Browser tests ran in
 | Determinism | **Pass**: re-extraction gives the same unbaked model (`935332e0…`) and re-baking the recorded final sha256 (`b248617a868b…`) |
 | `npm run build` | **Pass**. Vite warns about chunk size (1.79 MB of JavaScript, mostly three.js) |
 | `npm run e2e` | **Pass**: 24/25 in the full run (23 min); the one failure was the blood-sugar test's wrong expectation (see below), which passes after the fix |
+| Live site (2026-10-22) | **Pass**: https://endocrine-anatomy-lab.vercel.app returns the page; `models/endocrine.glb` is served with the recorded sha256 `b248617a868b…`; every mode opens in Chrome 155 with no console errors (ready in 11.9 s; Anatomy, Disorders, Atlas and Tour 61 fps, Cell 54, Stress 38, Calcium 33, Axes 31, Blood sugar 15 with the laptop in a power-saving state) |
 | GPU check (Chrome 155, AMD Radeon, D3D11) | Every mode and all 19 tour steps render with no console errors. Frame rates, with the laptop in a power-saving state: Anatomy 61 fps, Axes 29–41, Blood sugar 23, Stress 33, Calcium 31, Cell 53 |
 
 ## Defects found and fixed during QA
