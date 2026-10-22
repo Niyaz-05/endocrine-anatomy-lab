@@ -1,0 +1,1524 @@
+{
+  "output": {
+    "file": "public/models/endocrine.glb",
+    "bytes": 5227160,
+    "sha256": "b248617a868b9d346f91b40a8b6d7e13a560410606c5e20e97c540420f8339ed",
+    "triangles": 253603,
+    "sourceTriangles": 418124
+  },
+  "sources": {
+    "united": {
+      "name": "3D Reference Organ Set for Female v1.5 (HuBMAP HRA united female), as converted by Female Atlas",
+      "creators": "Kristen Browne, Heidi Schlehlein",
+      "doi": "https://doi.org/10.48539/HBM352.BTSQ.586",
+      "license": "CC-BY-4.0",
+      "intermediate": "github.com/Niyaz-05/female-atlas, commit 4c2dfcca02739b59827601915128ee64abdff2ea",
+      "atlasJsonSha256": "5fec63b2ebcb76ecd9c33027ed725e8ec0a7a76b756f72681285410072ae5c51",
+      "chunkSha256": {
+        "female-3.bin": "9385d56a03275590583969579a007d46d03f474988aca136a26937586d42f184",
+        "female-1.bin": "51539dfffe4553f163cc3ab727dd2f5fb61b80c6f82fdca43c9f3edeb84106c3",
+        "female-4.bin": "5f2906d7ebff3d3b0cb6ba57977cdc9704b9ea96c9aa7fcf56bef35f48213ae6",
+        "female-2.bin": "049180a31d36ecb0e16b9f5c362e236ab1d7a31751b4353207259ea06205b5e2",
+        "female-6.bin": "e9d9b27b52799f9ce155f666a93f2150c6822e9dc6669ab87f4d3a2df1eae9f0",
+        "female-8.bin": "059405eeb4951a5a64f4593da3c6a460b7adf8c45dc207341bf5eb496668bafc",
+        "female-7.bin": "8ce85965a15c7574df239d48f23c10a33a8e1a8b208eec3d8ea08cfdebbfc889",
+        "female-5.bin": "ee9b75cb2f9bddacc581ae7a57dd2fce8500aceab5b91916a826c6ba7aec5e81"
+      },
+      "transformReversed": "y - 0.794760942 m"
+    },
+    "bodyparts3d": {
+      "name": "BodyParts3D 4.0 (Database Center for Life Science), via the Human Atlas build",
+      "license": "CC-BY-4.0",
+      "intermediate": "github.com/Niyaz-05/human-atlas, commit 76f069640f2c3dd40a58d1556896ac25008f592e",
+      "atlasJsonSha256": "c359f4bcd2cba90b7411d66d5e9fc04dc81294d46cd5c1e8b212c824f2e5bbee",
+      "chunkSha256": {
+        "body-6.bin": "1c98dae807210cc51a4abc806134727c9544155cad0cc328cf2e1ae1f954d3ff",
+        "body-10.bin": "4a959d998acd35cf88518a0f2f8ab99b42d9f69c7ce0d6a814df315eeac807ac",
+        "body-8.bin": "18beacfdeadc8ad483d692672aae165f4323704cd7a9bfcbebbd703f5e268e25",
+        "body-11.bin": "e8c1afe7f30fe710ad164ec9cd2287a32881606e7eb590af47d76b3f84405027",
+        "body-12.bin": "61a6c8da89bb20df50c575964ac81aa4090eabfc2cb27ad2155aea325f31c6c0",
+        "body-13.bin": "4c51b6be85d5b705d2b52b79b9ad1cdae0b65ad03c9402a2f2673c7633fd94f3",
+        "body-14.bin": "58604526a0cd9e7dca4d8587cd9a42f9dd03ec6c4ebbc22a9bf017b31246f7e7",
+        "body-9.bin": "0aa8aa09a379a2d759872659a2ef68fc4510ee37e435c4ebc63ee679722a4547",
+        "body-5.bin": "32a967198ffed45839968228898f3d246c67f86fb26892c3ae270be30e2f1149"
+      },
+      "parts": {
+        "pituitary-anterior": [
+          "FJ1796 Pituitary gland"
+        ],
+        "pituitary-posterior": [
+          "FJ1796 Pituitary gland"
+        ],
+        "adrenal-cortex-left": [
+          "FJ3129 Left adrenal gland"
+        ],
+        "adrenal-cortex-right": [
+          "FJ3130 Right adrenal gland"
+        ],
+        "stomach": [
+          "FJ2564 Stomach"
+        ],
+        "common-carotid-artery-right": [
+          "FJ3564 Right common carotid artery"
+        ],
+        "subclavian-artery-right": [
+          "FJ3579 Right subclavian artery"
+        ],
+        "internal-carotid-artery-left": [
+          "FJ1682M Left internal carotid artery"
+        ],
+        "internal-carotid-artery-right": [
+          "FJ1682 Right internal carotid artery"
+        ],
+        "inferior-thyroid-artery-left": [
+          "FJ2210 Left inferior thyroid artery",
+          "FJ2255 Left thyrocervical trunk"
+        ],
+        "inferior-thyroid-artery-right": [
+          "FJ2209 Right inferior thyroid artery",
+          "FJ2307 Right thyrocervical trunk"
+        ],
+        "suprarenal-arteries-left": [
+          "FJ3467 Left inferior suprarenal artery",
+          "FJ3472 Left middle suprarenal artery"
+        ],
+        "suprarenal-arteries-right": [
+          "FJ3584 Right inferior suprarenal artery",
+          "FJ3586 Right middle suprarenal artery"
+        ],
+        "brachiocephalic-vein-left": [
+          "FJ3482 Left brachiocephalic vein"
+        ],
+        "brachiocephalic-vein-right": [
+          "FJ3583 Right brachiocephalic vein"
+        ],
+        "internal-jugular-vein-left": [
+          "FJ3485 Left internal jugular vein"
+        ],
+        "internal-jugular-vein-right": [
+          "FJ3585 Right internal jugular vein"
+        ],
+        "suprarenal-vein-left": [
+          "FJ3480 Left suprarenal vein"
+        ],
+        "suprarenal-vein-right": [
+          "FJ3580 Right suprarenal vein"
+        ],
+        "hyoid-bone": [
+          "FJ2772 Hyoid bone"
+        ],
+        "sphenoid-bone": [
+          "FJ3394 Sphenoid bone"
+        ],
+        "skull": [
+          "FJ3200 Frontal bone",
+          "FJ3274 Left parietal bone",
+          "FJ3380 Right parietal bone",
+          "FJ3309 Occipital bone",
+          "FJ3281 Left temporal bone",
+          "FJ3386 Right temporal bone",
+          "FJ3199 Ethmoid",
+          "FJ3269 Left maxilla",
+          "FJ3375 Right maxilla",
+          "FJ3287 Left zygomatic bone",
+          "FJ3392 Right zygomatic bone",
+          "FJ3272 Left nasal bone",
+          "FJ3378 Right nasal bone",
+          "FJ3273 Left palatine bone",
+          "FJ3379 Right palatine bone",
+          "FJ3395 Vomer",
+          "FJ3265 Left lacrimal bone",
+          "FJ3371 Right lacrimal bone"
+        ],
+        "mandible": [
+          "FJ3289 Mandible"
+        ],
+        "ribs-left": [
+          "FJ3228 Left first rib",
+          "FJ3229 Left second rib",
+          "FJ3230 Left third rib",
+          "FJ3231 Left fourth rib",
+          "FJ3232 Left fifth rib",
+          "FJ3233 Left sixth rib",
+          "FJ3234 Left seventh rib",
+          "FJ3235 Left eighth rib",
+          "FJ3236 Left ninth rib",
+          "FJ3225 Left tenth rib",
+          "FJ3226 Left eleventh rib",
+          "FJ3227 Left twelfth rib"
+        ],
+        "ribs-right": [
+          "FJ3334 Right first rib",
+          "FJ3336 Right second rib",
+          "FJ3338 Right third rib",
+          "FJ3340 Right fourth rib",
+          "FJ3342 Right fifth rib",
+          "FJ3344 Right sixth rib",
+          "FJ3346 Right seventh rib",
+          "FJ3347 Right eighth rib",
+          "FJ3348 Right ninth rib",
+          "FJ3330 Right tenth rib",
+          "FJ3331 Right eleventh rib",
+          "FJ3332 Right twelfth rib"
+        ],
+        "sternum": [
+          "FJ3290 Manubrium",
+          "FJ3178 Body of sternum",
+          "FJ3153 Xiphoid process"
+        ],
+        "clavicle-left": [
+          "FJ3237 Left clavicle"
+        ],
+        "clavicle-right": [
+          "FJ3362 Right clavicle"
+        ],
+        "hip-bone-left": [
+          "FJ3288 Left hip bone"
+        ],
+        "hip-bone-right": [
+          "FJ3152 Right hip bone"
+        ]
+      },
+      "registration": {
+        "method": "similarity (rotation, uniform scale, shift): Horn quaternion method on landmark centroids; kidney fits refined by ICP onto the HRA kidney capsule",
+        "fits": {
+          "head": {
+            "usedFor": [
+              "pituitary-anterior",
+              "pituitary-posterior",
+              "internal-carotid-artery-left",
+              "internal-carotid-artery-right",
+              "sphenoid-bone",
+              "skull",
+              "mandible"
+            ],
+            "scale": 0.957809,
+            "rotationDeg": 11.704684,
+            "rmsResidualMm": 6.949583,
+            "surfaceRmsMm": null,
+            "residuals": [
+              {
+                "landmark": "FJ1782 Left thalamus",
+                "mm": 4.535847
+              },
+              {
+                "landmark": "FJ1827 Right thalamus",
+                "mm": 4.67696
+              },
+              {
+                "landmark": "FJ1760 Hypothalamus",
+                "mm": 9.43486
+              },
+              {
+                "landmark": "FJ1808 Hypothalamus",
+                "mm": 9.488766
+              },
+              {
+                "landmark": "FJ1770 Midbrain",
+                "mm": 4.406841
+              },
+              {
+                "landmark": "FJ1817 Midbrain",
+                "mm": 2.79527
+              },
+              {
+                "landmark": "FJ1795 Pineal body",
+                "mm": 8.123892
+              },
+              {
+                "landmark": "FJ1781 Cerebellum",
+                "mm": 10.204835
+              },
+              {
+                "landmark": "FJ1830 Cerebellum",
+                "mm": 10.473805
+              },
+              {
+                "landmark": "FJ1769 Medulla oblongata",
+                "mm": 1.019516
+              },
+              {
+                "landmark": "FJ1831 Medulla oblongata",
+                "mm": 1.285538
+              }
+            ]
+          },
+          "neck": {
+            "usedFor": [
+              "common-carotid-artery-right",
+              "subclavian-artery-right",
+              "inferior-thyroid-artery-left",
+              "inferior-thyroid-artery-right",
+              "brachiocephalic-vein-left",
+              "brachiocephalic-vein-right",
+              "internal-jugular-vein-left",
+              "internal-jugular-vein-right",
+              "hyoid-bone"
+            ],
+            "scale": 1.245115,
+            "rotationDeg": 17.773902,
+            "rmsResidualMm": 5.413554,
+            "surfaceRmsMm": null,
+            "residuals": [
+              {
+                "landmark": "FJ2808 Thyroid cartilage",
+                "mm": 9.289765
+              },
+              {
+                "landmark": "FJ2440 Cricoid cartilage",
+                "mm": 6.889385
+              },
+              {
+                "landmark": "FJ3161 Third cervical vertebra",
+                "mm": 7.146056
+              },
+              {
+                "landmark": "FJ3164 Fourth cervical vertebra",
+                "mm": 4.786164
+              },
+              {
+                "landmark": "FJ3167 Fifth cervical vertebra",
+                "mm": 1.955617
+              },
+              {
+                "landmark": "FJ3170 Sixth cervical vertebra",
+                "mm": 5.530802
+              },
+              {
+                "landmark": "FJ3172 Seventh cervical vertebra",
+                "mm": 3.706798
+              },
+              {
+                "landmark": "FJ3158 First thoracic vertebra",
+                "mm": 2.479009
+              },
+              {
+                "landmark": "FJ3160 Second thoracic vertebra",
+                "mm": 1.312343
+              }
+            ]
+          },
+          "thorax": {
+            "usedFor": [
+              "ribs-left",
+              "ribs-right",
+              "sternum",
+              "clavicle-left",
+              "clavicle-right"
+            ],
+            "scale": 0.861461,
+            "rotationDeg": 6.083165,
+            "rmsResidualMm": 4.571758,
+            "surfaceRmsMm": null,
+            "residuals": [
+              {
+                "landmark": "FJ3158 First thoracic vertebra",
+                "mm": 7.057217
+              },
+              {
+                "landmark": "FJ3160 Second thoracic vertebra",
+                "mm": 5.006396
+              },
+              {
+                "landmark": "FJ3163 Third thoracic vertebra",
+                "mm": 2.582877
+              },
+              {
+                "landmark": "FJ3166 Fourth thoracic vertebra",
+                "mm": 4.584863
+              },
+              {
+                "landmark": "FJ3169 Fifth thoracic vertebra",
+                "mm": 3.438429
+              },
+              {
+                "landmark": "FJ3171 Sixth thoracic vertebra",
+                "mm": 5.068243
+              },
+              {
+                "landmark": "FJ3173 Seventh thoracic vertebra",
+                "mm": 5.226871
+              },
+              {
+                "landmark": "FJ3174 Eighth thoracic vertebra",
+                "mm": 3.631553
+              },
+              {
+                "landmark": "FJ3175 Ninth thoracic vertebra",
+                "mm": 2.704672
+              },
+              {
+                "landmark": "FJ3154 Tenth thoracic vertebra",
+                "mm": 2.931308
+              },
+              {
+                "landmark": "FJ3155 Eleventh thoracic vertebra",
+                "mm": 1.952876
+              },
+              {
+                "landmark": "FJ3156 Twelfth thoracic vertebra",
+                "mm": 7.107136
+              }
+            ]
+          },
+          "abdomen": {
+            "usedFor": [
+              "stomach"
+            ],
+            "scale": 0.983095,
+            "rotationDeg": 27.235896,
+            "rmsResidualMm": 2.613739,
+            "surfaceRmsMm": null,
+            "residuals": [
+              {
+                "landmark": "FJ3154 Tenth thoracic vertebra",
+                "mm": 1.953209
+              },
+              {
+                "landmark": "FJ3155 Eleventh thoracic vertebra",
+                "mm": 1.133318
+              },
+              {
+                "landmark": "FJ3156 Twelfth thoracic vertebra",
+                "mm": 3.379027
+              },
+              {
+                "landmark": "FJ3157 First lumbar vertebra",
+                "mm": 2.544211
+              },
+              {
+                "landmark": "FJ3159 Second lumbar vertebra",
+                "mm": 3.34184
+              }
+            ]
+          },
+          "pelvis": {
+            "usedFor": [
+              "hip-bone-left",
+              "hip-bone-right"
+            ],
+            "scale": 0.858267,
+            "rotationDeg": 12.723995,
+            "rmsResidualMm": 6.685612,
+            "surfaceRmsMm": null,
+            "residuals": [
+              {
+                "landmark": "FJ3162 Third lumbar vertebra",
+                "mm": 6.686755
+              },
+              {
+                "landmark": "FJ3165 Fourth lumbar vertebra",
+                "mm": 2.76567
+              },
+              {
+                "landmark": "FJ3168 Fifth lumbar vertebra",
+                "mm": 10.096859
+              },
+              {
+                "landmark": "FJ3393 Sacrum",
+                "mm": 4.947875
+              }
+            ]
+          },
+          "kidney-left": {
+            "usedFor": [
+              "adrenal-cortex-left",
+              "suprarenal-arteries-left",
+              "suprarenal-vein-left"
+            ],
+            "scale": 1.362207,
+            "rotationDeg": 29.687107,
+            "rmsResidualMm": 46.662814,
+            "surfaceRmsMm": 5.369511,
+            "residuals": [
+              {
+                "landmark": "FJ3145 Left kidney",
+                "mm": 3.870319
+              },
+              {
+                "landmark": "FJ3476 Trunk of left renal artery",
+                "mm": 39.720428
+              },
+              {
+                "landmark": "FJ3478 Left renal vein",
+                "mm": 70.282024
+              }
+            ]
+          },
+          "kidney-right": {
+            "usedFor": [
+              "adrenal-cortex-right",
+              "suprarenal-arteries-right",
+              "suprarenal-vein-right"
+            ],
+            "scale": 1.215526,
+            "rotationDeg": 28.661224,
+            "rmsResidualMm": 26.032052,
+            "surfaceRmsMm": 6.651809,
+            "residuals": [
+              {
+                "landmark": "FJ3147 Right kidney",
+                "mm": 5.897736
+              },
+              {
+                "landmark": "FJ3576 Trunk of right renal artery",
+                "mm": 26.451265
+              },
+              {
+                "landmark": "FJ3578 Right renal vein",
+                "mm": 36.035406
+              }
+            ]
+          }
+        }
+      },
+      "verticesInsideTargetsPct": {
+        "before": {
+          "adrenal-cortex-left": 0,
+          "adrenal-cortex-right": 0,
+          "stomach": 37.588652
+        },
+        "after": {
+          "adrenal-cortex-left": 0,
+          "adrenal-cortex-right": 0,
+          "stomach": 0
+        }
+      },
+      "pituitarySplit": {
+        "pituitary-anterior": {
+          "planeZ": 0.007656,
+          "insideSamples": 20195,
+          "loopsClosed": 1
+        },
+        "pituitary-posterior": {
+          "planeZ": 0.007656,
+          "insideSamples": 20195,
+          "loopsClosed": 1
+        }
+      }
+    },
+    "modelled": {
+      "thyroid-lobe-left/right, thyroid-isthmus": "Generated: no open scanned thyroid exists (BodyParts3D 3.0 and 4.0 and the 81 HRA reference organs have none). Lobes about 50 mm high and 20 mm wide and deep, from the level of the thyroid cartilage to the 5th–6th tracheal ring; the isthmus over tracheal rings 2–4; both pushed onto the HRA trachea and larynx so they wrap the real airway (Gray’s Anatomy, 42nd ed.).",
+      "parathyroid-*": "Generated ellipsoids, 6 × 4 × 2 mm, on the back of each lobe: superior at the cricoid, inferior near the lower pole.",
+      "infundibulum": "Generated tube, about 3 mm wide, from the base of the HRA hypothalamus to the top of the placed pituitary.",
+      "adrenal-medulla-*": "Generated inner surface of the placed BodyParts3D adrenal gland (each vertex moved 45 % of the way to the opposite wall, then towards the centre), about a tenth of the gland.",
+      "pituitary-anterior/posterior": "The BodyParts3D pituitary cut by a frontal plane so the front 75 % of its volume is the anterior lobe."
+    }
+  },
+  "changesHere": "Selected and merged the source meshes in src/endocrine/source/structures.source.json; welded coincident vertices; simplified the large HRA meshes with meshoptimizer within the relative error bounds given there (largest error used: 0.937 %); subdivided and smoothed the small parts; recomputed smooth normals; placed the BodyParts3D parts onto the HRA body; pushed the adrenal glands and stomach out of the organs they overlapped; split the pituitary; generated the thyroid, parathyroids, pituitary stalk and adrenal medulla; traced the hormone routes; translated so the middle of the glands is the origin.",
+  "centreOffsetMetres": [
+    0,
+    0.414638,
+    -0.050261
+  ],
+  "measures": {
+    "pituitary": {
+      "sizeMm": [
+        11.693658,
+        12.956433,
+        9.105885
+      ],
+      "volumeMl": 0.545453,
+      "anteriorShare": 0.742238,
+      "stalkLengthMm": 10.447824
+    },
+    "pineal": {
+      "sizeMm": [
+        7.648381,
+        5.306324,
+        3.844486
+      ]
+    },
+    "hypothalamus": {
+      "sizeMm": [
+        9.962617,
+        11.372218,
+        3.489396
+      ]
+    },
+    "thyroid": {
+      "lobeSizeMm": {
+        "left": [
+          52.278406,
+          21.627041,
+          20.275201
+        ],
+        "right": [
+          51.696268,
+          21.057583,
+          21.742772
+        ]
+      },
+      "lobeHeightMm": 50,
+      "isthmusSizeMm": [
+        18.884801,
+        12.000009,
+        6.813001
+      ],
+      "volumeMl": 14.500625,
+      "isthmusLevel": "T1",
+      "isthmusRings": [
+        2,
+        4
+      ],
+      "cricoidLowerBorderLevel": "C7"
+    },
+    "parathyroid": {
+      "sizeMm": [
+        6.000012,
+        4,
+        1.969617
+      ],
+      "centres": {
+        "superior-left": [
+          -0.002224,
+          0.187361,
+          0.014679
+        ],
+        "inferior-left": [
+          0.000733,
+          0.175209,
+          0.013166
+        ],
+        "superior-right": [
+          -0.022062,
+          0.188378,
+          0.017571
+        ],
+        "inferior-right": [
+          -0.019906,
+          0.175658,
+          0.012847
+        ]
+      }
+    },
+    "adrenal": {
+      "left": {
+        "sizeMm": [
+          52.601403,
+          38.460862,
+          17.610723
+        ],
+        "volumeMl": 9.86912,
+        "medullaMl": 1.561152,
+        "medullaShare": 0.158186
+      },
+      "right": {
+        "sizeMm": [
+          43.422765,
+          33.289532,
+          15.787711
+        ],
+        "volumeMl": 5.637248,
+        "medullaMl": 0.622208,
+        "medullaShare": 0.110374
+      }
+    },
+    "pancreas": {
+      "lengthMm": 181.291223,
+      "level": "L2"
+    },
+    "ovary": {
+      "left": [
+        25.454056,
+        9.827608,
+        7.833473
+      ],
+      "right": [
+        25.498735,
+        9.684437,
+        7.877754
+      ]
+    },
+    "thymus": {
+      "sizeMm": [
+        142.544478,
+        71.732531,
+        27.849025
+      ]
+    },
+    "levels": {
+      "pituitary": null,
+      "thyroid": "T1",
+      "adrenalLeft": "L1",
+      "pancreas": "L2",
+      "ovaries": "L6"
+    }
+  },
+  "orientationChecks": {
+    "pituitaryBelowHypothalamus": true,
+    "pituitaryInSella": true,
+    "anteriorLobeInFront": true,
+    "pinealBehindThalamus": true,
+    "thyroidInFrontOfTrachea": true,
+    "thyroidLobesBesideTrachea": true,
+    "thyroidBelowCricoidAboveSternum": true,
+    "parathyroidSides": true,
+    "parathyroidsBehindThyroid": true,
+    "thymusBehindSternum": true,
+    "adrenalsAboveKidneys": true,
+    "medullaInsideCortex": true,
+    "pancreasHeadInDuodenalCurve": true,
+    "ovariesInPelvis": true,
+    "routesEndInTheHeart": true
+  },
+  "routeLengthsMm": {
+    "heart": 364.747901,
+    "to-pituitary": 287.074863,
+    "to-hypothalamus": 299.528883,
+    "to-thyroid-left": 198.398792,
+    "to-thyroid-right": 294.236678,
+    "to-parathyroids": 210.793644,
+    "to-adrenal-left": 546.071653,
+    "to-kidney-left": 485.491571,
+    "to-adrenal-right": 545.066131,
+    "to-kidney-right": 493.224946,
+    "to-pancreas": 503.560735,
+    "to-liver": 439.003525,
+    "to-gut": 457.123488,
+    "to-bone": 463.997018,
+    "to-ovary-left": 602.462304,
+    "ovary-left-to-heart": 462.050675,
+    "to-ovary-right": 618.069557,
+    "ovary-right-to-heart": 461.769574,
+    "jugular-to-heart": 294.002351,
+    "pituitary-to-heart": 482.891648,
+    "pineal-to-heart": 517.955195,
+    "hypothalamus-to-heart": 497.922978,
+    "thyroid-to-heart": 309.680662,
+    "parathyroids-to-heart": 311.251389,
+    "thymus-to-heart": 241.099771,
+    "adrenal-left-to-heart": 389.187018,
+    "kidney-left-to-heart": 311.089144,
+    "adrenal-right-to-heart": 317.48338,
+    "kidney-right-to-heart": 268.986793,
+    "pancreas-to-heart": 620.377967,
+    "pancreas-to-liver": 419.970019,
+    "liver-to-heart": 152.1845,
+    "stomach-to-heart": 456.135767,
+    "duodenum-to-heart": 379.736332,
+    "portal-hypophyseal": 26.036454,
+    "hypothalamus-to-posterior": 25.860937
+  },
+  "structures": [
+    {
+      "id": "hypothalamus",
+      "united": [
+        "Allen_hypothalamus_L",
+        "Allen_hypothalamus_R"
+      ]
+    },
+    {
+      "id": "pituitary-anterior",
+      "bp3d": [
+        "FJ1796"
+      ]
+    },
+    {
+      "id": "pituitary-posterior",
+      "bp3d": [
+        "FJ1796"
+      ]
+    },
+    {
+      "id": "infundibulum",
+      "generated": "infundibulum"
+    },
+    {
+      "id": "pineal-gland",
+      "united": [
+        "Allen_pineal_body_L",
+        "Allen_pineal_body_R"
+      ]
+    },
+    {
+      "id": "thyroid-lobe-left",
+      "generated": "thyroid-lobe"
+    },
+    {
+      "id": "thyroid-lobe-right",
+      "generated": "thyroid-lobe"
+    },
+    {
+      "id": "thyroid-isthmus",
+      "generated": "thyroid-isthmus"
+    },
+    {
+      "id": "parathyroid-superior-left",
+      "generated": "parathyroid"
+    },
+    {
+      "id": "parathyroid-inferior-left",
+      "generated": "parathyroid"
+    },
+    {
+      "id": "parathyroid-superior-right",
+      "generated": "parathyroid"
+    },
+    {
+      "id": "parathyroid-inferior-right",
+      "generated": "parathyroid"
+    },
+    {
+      "id": "thymus-left",
+      "united": [
+        "VH_F_thymus_lobe_L"
+      ]
+    },
+    {
+      "id": "thymus-right",
+      "united": [
+        "VH_F_thymus_lobe_R"
+      ]
+    },
+    {
+      "id": "adrenal-cortex-left",
+      "bp3d": [
+        "FJ3129"
+      ]
+    },
+    {
+      "id": "adrenal-cortex-right",
+      "bp3d": [
+        "FJ3130"
+      ]
+    },
+    {
+      "id": "adrenal-medulla-left",
+      "generated": "adrenal-medulla"
+    },
+    {
+      "id": "adrenal-medulla-right",
+      "generated": "adrenal-medulla"
+    },
+    {
+      "id": "pancreas-head",
+      "united": [
+        "VH_F_head_of_pancreas",
+        "VH_F_ucinate_process1"
+      ]
+    },
+    {
+      "id": "pancreas-neck",
+      "united": [
+        "VH_F_neck_of_pancreas"
+      ]
+    },
+    {
+      "id": "pancreas-body",
+      "united": [
+        "VH_F_body_of_pancreas"
+      ]
+    },
+    {
+      "id": "pancreas-tail",
+      "united": [
+        "VH_F_tail_of_pancreas"
+      ]
+    },
+    {
+      "id": "pancreatic-duct",
+      "united": [
+        "VH_F_ventral_pancreatic_duct",
+        "VH_F_dorsal_pancreatic_duct"
+      ]
+    },
+    {
+      "id": "ovary-left",
+      "united": [
+        "VH_F_left_ovary"
+      ]
+    },
+    {
+      "id": "ovary-right",
+      "united": [
+        "VH_F_right_ovary"
+      ]
+    },
+    {
+      "id": "heart-atria",
+      "united": [
+        "VH_F_left_cardiac_atrium",
+        "VH_F_right_cardiac_atrium"
+      ]
+    },
+    {
+      "id": "heart-ventricles",
+      "united": [
+        "VH_F_left_ventricle",
+        "VH_F_right_ventricle"
+      ]
+    },
+    {
+      "id": "kidney-left",
+      "united": [
+        "VH_F_kidney_capsule_L"
+      ]
+    },
+    {
+      "id": "kidney-right",
+      "united": [
+        "VH_F_kidney_capsule_R"
+      ]
+    },
+    {
+      "id": "stomach",
+      "bp3d": [
+        "FJ2564"
+      ]
+    },
+    {
+      "id": "duodenum",
+      "united": [
+        "VH_F_duodenum_superior",
+        "VH_F_duodenum_descending",
+        "VH_F_duodenum_horizontal",
+        "VH_F_duodenum_ascending"
+      ]
+    },
+    {
+      "id": "liver",
+      "united": [
+        "VH_F_capsule_of_the_liver"
+      ]
+    },
+    {
+      "id": "spleen",
+      "united": [
+        "VH_F_gastric_surface_of_spleen",
+        "VH_F_diaphragmatic_surface_of_spleen",
+        "VH_F_colic_surface_of_spleen",
+        "VH_F_hilum_of_spleen",
+        "VH_F_renal_surface_of_spleen"
+      ]
+    },
+    {
+      "id": "uterus",
+      "united": [
+        "VH_F_fundus_of_uterus",
+        "VH_F_body_of_uterus",
+        "VH_F_lower_uterine_segment",
+        "VH_F_cervix"
+      ]
+    },
+    {
+      "id": "uterine-tube-left",
+      "united": [
+        "VH_F_ampulla_of_uterine_tube_L",
+        "VH_F_isthmus_of_fallopian_tube_L",
+        "VH_F_uterine_tube_infundibulum_L",
+        "VH_F_fibria_of_uterine_tube_L"
+      ]
+    },
+    {
+      "id": "uterine-tube-right",
+      "united": [
+        "VH_F_ampulla_of_uterine_tube_R",
+        "VH_F_isthmus_of_fallopian_tube_R",
+        "VH_F_uterine_tube_infundibulum_R",
+        "VH_F_fibria_of_uterine_tube_R"
+      ]
+    },
+    {
+      "id": "ascending-aorta",
+      "united": [
+        "VH_F_ascending_aorta"
+      ]
+    },
+    {
+      "id": "aortic-arch",
+      "united": [
+        "VH_F_aortic_arch"
+      ]
+    },
+    {
+      "id": "thoracic-aorta",
+      "united": [
+        "VH_F_descending_aorta_a"
+      ]
+    },
+    {
+      "id": "abdominal-aorta",
+      "united": [
+        "VH_F_descending_aorta_b"
+      ]
+    },
+    {
+      "id": "brachiocephalic-trunk",
+      "united": [
+        "VH_F_brachiocephalic_artery_a",
+        "VH_F_brachiocephalic_artery_b"
+      ]
+    },
+    {
+      "id": "common-carotid-artery-left",
+      "united": [
+        "VH_F_left_common_carotid_artery_a",
+        "VH_F_left_common_carotid_artery_b"
+      ]
+    },
+    {
+      "id": "common-carotid-artery-right",
+      "bp3d": [
+        "FJ3564"
+      ]
+    },
+    {
+      "id": "subclavian-artery-left",
+      "united": [
+        "VH_F_left_subclavian_artery_a",
+        "VH_F_left_subclavian_artery_b"
+      ]
+    },
+    {
+      "id": "subclavian-artery-right",
+      "bp3d": [
+        "FJ3579"
+      ]
+    },
+    {
+      "id": "internal-carotid-artery-left",
+      "bp3d": [
+        "FJ1682M"
+      ]
+    },
+    {
+      "id": "internal-carotid-artery-right",
+      "bp3d": [
+        "FJ1682"
+      ]
+    },
+    {
+      "id": "inferior-thyroid-artery-left",
+      "bp3d": [
+        "FJ2210",
+        "FJ2255"
+      ]
+    },
+    {
+      "id": "inferior-thyroid-artery-right",
+      "bp3d": [
+        "FJ2209",
+        "FJ2307"
+      ]
+    },
+    {
+      "id": "suprarenal-arteries-left",
+      "bp3d": [
+        "FJ3467",
+        "FJ3472"
+      ]
+    },
+    {
+      "id": "suprarenal-arteries-right",
+      "bp3d": [
+        "FJ3584",
+        "FJ3586"
+      ]
+    },
+    {
+      "id": "renal-artery-left",
+      "united": [
+        "VH_F_left_renal_artery"
+      ]
+    },
+    {
+      "id": "renal-artery-right",
+      "united": [
+        "VH_F_right_renal_artery"
+      ]
+    },
+    {
+      "id": "celiac-trunk",
+      "united": [
+        "VH_F_celiac_trunk"
+      ]
+    },
+    {
+      "id": "splenic-artery",
+      "united": [
+        "VH_F_splenic_artery"
+      ]
+    },
+    {
+      "id": "pulmonary-trunk",
+      "united": [
+        "VH_F_pulmonary_trunk",
+        "VH_F_pulmonary_artery_L",
+        "VH_F_pulmonary_artery_R"
+      ]
+    },
+    {
+      "id": "superior-vena-cava",
+      "united": [
+        "VH_F_superior_vena_cava"
+      ]
+    },
+    {
+      "id": "inferior-vena-cava",
+      "united": [
+        "VH_F_inferior_vena_cava_a",
+        "VH_F_inferior_vena_cava_b"
+      ]
+    },
+    {
+      "id": "brachiocephalic-vein-left",
+      "bp3d": [
+        "FJ3482"
+      ]
+    },
+    {
+      "id": "brachiocephalic-vein-right",
+      "bp3d": [
+        "FJ3583"
+      ]
+    },
+    {
+      "id": "internal-jugular-vein-left",
+      "bp3d": [
+        "FJ3485"
+      ]
+    },
+    {
+      "id": "internal-jugular-vein-right",
+      "bp3d": [
+        "FJ3585"
+      ]
+    },
+    {
+      "id": "suprarenal-vein-left",
+      "bp3d": [
+        "FJ3480"
+      ]
+    },
+    {
+      "id": "suprarenal-vein-right",
+      "bp3d": [
+        "FJ3580"
+      ]
+    },
+    {
+      "id": "renal-vein-left",
+      "united": [
+        "VH_F_left_renal_vein"
+      ]
+    },
+    {
+      "id": "renal-vein-right",
+      "united": [
+        "VH_F_right_renal_vein"
+      ]
+    },
+    {
+      "id": "splenic-vein",
+      "united": [
+        "VH_F_splenic_vein"
+      ]
+    },
+    {
+      "id": "hepatic-portal-vein",
+      "united": [
+        "VH_F_hepatic_portal_vein",
+        "VH_F_right_branch_of_portal_vein",
+        "VH_F_left_branch_of_portal_vein"
+      ]
+    },
+    {
+      "id": "hepatic-veins",
+      "united": [
+        "VH_F_right_hepatic_vein",
+        "VH_F_middle_hepatic_vein",
+        "VH_F_left_hepatic_vein"
+      ]
+    },
+    {
+      "id": "pulmonary-veins",
+      "united": [
+        "VH_F_pulmonary_vein_L_sup",
+        "VH_F_pulmonary_vein_L_inf",
+        "VH_F_pulmonary_vein_R_sup",
+        "VH_F_pulmonary_vein_R_inf"
+      ]
+    },
+    {
+      "id": "thyroid-cartilage",
+      "united": [
+        "VH_F_thyroid_cartilage"
+      ]
+    },
+    {
+      "id": "cricoid-cartilage",
+      "united": [
+        "VH_F_cricoid_cartilage"
+      ]
+    },
+    {
+      "id": "trachea",
+      "united": [
+        "VH_F_trachea",
+        "VH_F_tracheal_cartilage"
+      ]
+    },
+    {
+      "id": "hyoid-bone",
+      "bp3d": [
+        "FJ2772"
+      ]
+    },
+    {
+      "id": "thalamus-left",
+      "united": [
+        "Allen_thalamus_R"
+      ]
+    },
+    {
+      "id": "thalamus-right",
+      "united": [
+        "Allen_thalamus_L"
+      ]
+    },
+    {
+      "id": "third-ventricle",
+      "united": [
+        "Allen_third_ventricle_L",
+        "Allen_third_ventricle_R"
+      ]
+    },
+    {
+      "id": "cerebrum-left",
+      "united": [
+        "Allen_white_matter_of_forebrain_R"
+      ]
+    },
+    {
+      "id": "cerebrum-right",
+      "united": [
+        "Allen_white_matter_of_forebrain_L"
+      ]
+    },
+    {
+      "id": "cerebellum",
+      "united": [
+        "Allen_lateral_hemisphere_of_cerebellum_L",
+        "Allen_lateral_hemisphere_of_cerebellum_R",
+        "Allen_cerebellar_vermis_L",
+        "Allen_cerebellar_vermis_R",
+        "Allen_paravermis_of_cerebellum_L",
+        "Allen_paravermis_of_cerebellum_R"
+      ]
+    },
+    {
+      "id": "brainstem",
+      "united": [
+        "Allen_midbrain_tegmentum_L",
+        "Allen_midbrain_tegmentum_R",
+        "Allen_tegmentum_of_medulla_oblongata_L",
+        "Allen_tegmentum_of_medulla_oblongata_R",
+        "Allen_pyramidal_part_of_medulla_oblongata_L",
+        "Allen_pyramidal_part_of_medulla_oblongata_R"
+      ]
+    },
+    {
+      "id": "cervical-spine",
+      "united": [
+        "VH_F_cervical_vertebra_1",
+        "VH_F_cervical_vertebra_2",
+        "VH_F_cervical_vertebra_3",
+        "VH_F_cervical_vertebra_4",
+        "VH_F_cervical_vertebra_5",
+        "VH_F_cervical_vertebra_6",
+        "VH_F_cervical_vertebra_7"
+      ]
+    },
+    {
+      "id": "thoracic-spine",
+      "united": [
+        "VH_F_thoracic_vertebra_1",
+        "VH_F_thoracic_vertebra_2",
+        "VH_F_thoracic_vertebra_3",
+        "VH_F_thoracic_vertebra_4",
+        "VH_F_thoracic_vertebra_5",
+        "VH_F_thoracic_vertebra_6",
+        "VH_F_thoracic_vertebra_7",
+        "VH_F_thoracic_vertebra_8",
+        "VH_F_thoracic_vertebra_9",
+        "VH_F_thoracic_vertebra_10",
+        "VH_F_thoracic_vertebra_11",
+        "VH_F_thoracic_vertebra_12"
+      ]
+    },
+    {
+      "id": "lumbar-spine",
+      "united": [
+        "VH_F_lumbar_vertebra_1",
+        "VH_F_lumbar_vertebra_2",
+        "VH_F_lumbar_vertebra_3",
+        "VH_F_lumbar_vertebra_4",
+        "VH_F_lumbar_vertebra_5",
+        "VH_F_lumbar_vertebra_6"
+      ]
+    },
+    {
+      "id": "sacrum",
+      "united": [
+        "VH_F_sacrum",
+        "VH_F_coccyx"
+      ]
+    },
+    {
+      "id": "sphenoid-bone",
+      "bp3d": [
+        "FJ3394"
+      ]
+    },
+    {
+      "id": "skull",
+      "bp3d": [
+        "FJ3200",
+        "FJ3274",
+        "FJ3380",
+        "FJ3309",
+        "FJ3281",
+        "FJ3386",
+        "FJ3199",
+        "FJ3269",
+        "FJ3375",
+        "FJ3287",
+        "FJ3392",
+        "FJ3272",
+        "FJ3378",
+        "FJ3273",
+        "FJ3379",
+        "FJ3395",
+        "FJ3265",
+        "FJ3371"
+      ]
+    },
+    {
+      "id": "mandible",
+      "bp3d": [
+        "FJ3289"
+      ]
+    },
+    {
+      "id": "ribs-left",
+      "bp3d": [
+        "FJ3228",
+        "FJ3229",
+        "FJ3230",
+        "FJ3231",
+        "FJ3232",
+        "FJ3233",
+        "FJ3234",
+        "FJ3235",
+        "FJ3236",
+        "FJ3225",
+        "FJ3226",
+        "FJ3227"
+      ]
+    },
+    {
+      "id": "ribs-right",
+      "bp3d": [
+        "FJ3334",
+        "FJ3336",
+        "FJ3338",
+        "FJ3340",
+        "FJ3342",
+        "FJ3344",
+        "FJ3346",
+        "FJ3347",
+        "FJ3348",
+        "FJ3330",
+        "FJ3331",
+        "FJ3332"
+      ]
+    },
+    {
+      "id": "sternum",
+      "bp3d": [
+        "FJ3290",
+        "FJ3178",
+        "FJ3153"
+      ]
+    },
+    {
+      "id": "clavicle-left",
+      "bp3d": [
+        "FJ3237"
+      ]
+    },
+    {
+      "id": "clavicle-right",
+      "bp3d": [
+        "FJ3362"
+      ]
+    },
+    {
+      "id": "hip-bone-left",
+      "bp3d": [
+        "FJ3288"
+      ]
+    },
+    {
+      "id": "hip-bone-right",
+      "bp3d": [
+        "FJ3152"
+      ]
+    }
+  ],
+  "shadingBake": {
+    "tool": "tools/bake-shading.mjs",
+    "config": {
+      "$comment": "Shading bake for the real-tissue look (tools/bake-shading.mjs). occluders: which layers can shade each layer, so hiding a layer never leaves dark shadows behind (each gland shades itself and the airway shades the thyroid; vessels shade vessels; bones shade only bone).",
+      "model": "public/models/endocrine.glb",
+      "provenance": "src/endocrine/generated/provenance.json",
+      "aoDistance": 0.01,
+      "rays": 48,
+      "rayOffset": 0.00025,
+      "noiseFrequency": 260,
+      "occluders": {
+        "hypothalamus-pituitary": [
+          "hypothalamus-pituitary"
+        ],
+        "pineal": [
+          "pineal"
+        ],
+        "thyroid": [
+          "thyroid",
+          "airway"
+        ],
+        "thymus": [
+          "thymus"
+        ],
+        "adrenal": [
+          "adrenal"
+        ],
+        "pancreas": [
+          "pancreas"
+        ],
+        "ovary": [
+          "ovary"
+        ],
+        "makers": [
+          "makers"
+        ],
+        "neighbours": [
+          "neighbours"
+        ],
+        "artery": [
+          "artery",
+          "vein"
+        ],
+        "vein": [
+          "vein",
+          "artery"
+        ],
+        "airway": [
+          "airway"
+        ],
+        "brain": [
+          "brain"
+        ],
+        "bone": [
+          "bone"
+        ],
+        "skeleton": [
+          "skeleton"
+        ],
+        "cerebrum": [
+          "cerebrum"
+        ]
+      },
+      "fat": null
+    },
+    "attribute": "_TISSUE (VEC4 unsigned byte, normalised): r ambient occlusion, g mottling noise, b fat proximity, a unused",
+    "unbakedSha256": "935332e00c352e1b6c73e076821b505ead78e16e0c9075453b75fec8bf21081f",
+    "unbakedOutput": {
+      "bytes": 4695924
+    },
+    "vertices": 129341,
+    "layers": {
+      "hypothalamus-pituitary": {
+        "meshes": 4,
+        "meanAO": 0.881,
+        "vertices": 2949
+      },
+      "pineal": {
+        "meshes": 1,
+        "meanAO": 0.771,
+        "vertices": 396
+      },
+      "thymus": {
+        "meshes": 2,
+        "meanAO": 0.975,
+        "vertices": 514
+      },
+      "adrenal": {
+        "meshes": 4,
+        "meanAO": 0.727,
+        "vertices": 3050
+      },
+      "pancreas": {
+        "meshes": 5,
+        "meanAO": 0.847,
+        "vertices": 3591
+      },
+      "ovary": {
+        "meshes": 2,
+        "meanAO": 1,
+        "vertices": 365
+      },
+      "makers": {
+        "meshes": 7,
+        "meanAO": 0.898,
+        "vertices": 14504
+      },
+      "neighbours": {
+        "meshes": 4,
+        "meanAO": 0.825,
+        "vertices": 6163
+      },
+      "artery": {
+        "meshes": 20,
+        "meanAO": 0.887,
+        "vertices": 20657
+      },
+      "vein": {
+        "meshes": 14,
+        "meanAO": 0.857,
+        "vertices": 14887
+      },
+      "airway": {
+        "meshes": 4,
+        "meanAO": 0.737,
+        "vertices": 5512
+      },
+      "brain": {
+        "meshes": 4,
+        "meanAO": 0.785,
+        "vertices": 4266
+      },
+      "cerebrum": {
+        "meshes": 3,
+        "meanAO": 0.673,
+        "vertices": 8108
+      },
+      "bone": {
+        "meshes": 5,
+        "meanAO": 0.883,
+        "vertices": 17254
+      },
+      "skeleton": {
+        "meshes": 9,
+        "meanAO": 0.858,
+        "vertices": 23943
+      },
+      "thyroid": {
+        "meshes": 7,
+        "meanAO": 0.511,
+        "vertices": 3182
+      }
+    }
+  }
+}

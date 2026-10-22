@@ -1,0 +1,63 @@
+{
+  "$comment": "Shading bake for the real-tissue look (tools/bake-shading.mjs). occluders: which layers can shade each layer, so hiding a layer never leaves dark shadows behind (each gland shades itself and the airway shades the thyroid; vessels shade vessels; bones shade only bone).",
+  "model": "public/models/endocrine.glb",
+  "provenance": "src/endocrine/generated/provenance.json",
+  "aoDistance": 0.01,
+  "rays": 48,
+  "rayOffset": 0.00025,
+  "noiseFrequency": 260,
+  "occluders": {
+    "hypothalamus-pituitary": [
+      "hypothalamus-pituitary"
+    ],
+    "pineal": [
+      "pineal"
+    ],
+    "thyroid": [
+      "thyroid",
+      "airway"
+    ],
+    "thymus": [
+      "thymus"
+    ],
+    "adrenal": [
+      "adrenal"
+    ],
+    "pancreas": [
+      "pancreas"
+    ],
+    "ovary": [
+      "ovary"
+    ],
+    "makers": [
+      "makers"
+    ],
+    "neighbours": [
+      "neighbours"
+    ],
+    "artery": [
+      "artery",
+      "vein"
+    ],
+    "vein": [
+      "vein",
+      "artery"
+    ],
+    "airway": [
+      "airway"
+    ],
+    "brain": [
+      "brain"
+    ],
+    "bone": [
+      "bone"
+    ],
+    "skeleton": [
+      "skeleton"
+    ],
+    "cerebrum": [
+      "cerebrum"
+    ]
+  },
+  "fat": null
+}

@@ -1,0 +1,1325 @@
+{
+ "$comment": "Endocrine-lab structures mapped to source parts. 'united': part id in the HRA united-female v1.5 body as converted by Female Atlas (translated +0.794760942 m in y; reversed here). 'bp3d': BodyParts3D 4.0 part id in the Human Atlas build, placed by a similarity fit (see registration). 'generated': built in tools/extract-endocrine.mjs (no open scanned model exists: the thyroid, the parathyroids, the pituitary stalk and the adrenal medulla). 'split': half of the BodyParts3D pituitary (anterior / posterior lobe, cut by a plane). 'mould': pushed out of the listed structures after placing. 'ownScale': placed by its fit but kept at its own size (the adrenal glands: the kidney fit scales BodyParts3D up to the larger HRA kidney). 'simplify': target share of triangles for large meshes. Allen brain parts carry the opposite side suffix (Allen _R lies on the patient's left); sides are checked by position: +x is the patient's left.",
+ "unitedYShift": 0.794760942,
+ "structures": [
+  {
+   "id": "hypothalamus",
+   "layer": "hypothalamus-pituitary",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "Allen_hypothalamus_L",
+    "Allen_hypothalamus_R"
+   ],
+   "smooth": true
+  },
+  {
+   "id": "pituitary-anterior",
+   "layer": "hypothalamus-pituitary",
+   "side": "midline",
+   "sideCheck": false,
+   "fit": "head",
+   "bp3d": [
+    "FJ1796"
+   ],
+   "split": "anterior"
+  },
+  {
+   "id": "pituitary-posterior",
+   "layer": "hypothalamus-pituitary",
+   "side": "midline",
+   "sideCheck": false,
+   "fit": "head",
+   "bp3d": [
+    "FJ1796"
+   ],
+   "split": "posterior"
+  },
+  {
+   "id": "infundibulum",
+   "layer": "hypothalamus-pituitary",
+   "side": "midline",
+   "sideCheck": false,
+   "generated": "infundibulum"
+  },
+  {
+   "id": "pineal-gland",
+   "layer": "pineal",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "Allen_pineal_body_L",
+    "Allen_pineal_body_R"
+   ],
+   "smooth": true
+  },
+  {
+   "id": "thyroid-lobe-left",
+   "layer": "thyroid",
+   "side": "left",
+   "generated": "thyroid-lobe"
+  },
+  {
+   "id": "thyroid-lobe-right",
+   "layer": "thyroid",
+   "side": "right",
+   "generated": "thyroid-lobe"
+  },
+  {
+   "id": "thyroid-isthmus",
+   "layer": "thyroid",
+   "side": "midline",
+   "sideCheck": false,
+   "generated": "thyroid-isthmus"
+  },
+  {
+   "id": "parathyroid-superior-left",
+   "layer": "thyroid",
+   "side": "left",
+   "generated": "parathyroid",
+   "sideCheck": false
+  },
+  {
+   "id": "parathyroid-inferior-left",
+   "layer": "thyroid",
+   "side": "left",
+   "generated": "parathyroid",
+   "sideCheck": false
+  },
+  {
+   "id": "parathyroid-superior-right",
+   "layer": "thyroid",
+   "side": "right",
+   "generated": "parathyroid",
+   "sideCheck": false
+  },
+  {
+   "id": "parathyroid-inferior-right",
+   "layer": "thyroid",
+   "side": "right",
+   "generated": "parathyroid",
+   "sideCheck": false
+  },
+  {
+   "id": "thymus-left",
+   "layer": "thymus",
+   "side": "left",
+   "united": [
+    "VH_F_thymus_lobe_L"
+   ]
+  },
+  {
+   "id": "thymus-right",
+   "layer": "thymus",
+   "side": "right",
+   "united": [
+    "VH_F_thymus_lobe_R"
+   ],
+   "sideCheck": false
+  },
+  {
+   "id": "adrenal-cortex-left",
+   "layer": "adrenal",
+   "side": "left",
+   "fit": "kidney-left",
+   "bp3d": [
+    "FJ3129"
+   ],
+   "ownScale": true,
+   "mould": [
+    "kidney-left",
+    "kidney-right"
+   ]
+  },
+  {
+   "id": "adrenal-cortex-right",
+   "layer": "adrenal",
+   "side": "right",
+   "fit": "kidney-right",
+   "bp3d": [
+    "FJ3130"
+   ],
+   "ownScale": true,
+   "mould": [
+    "kidney-left",
+    "kidney-right"
+   ]
+  },
+  {
+   "id": "adrenal-medulla-left",
+   "layer": "adrenal",
+   "side": "left",
+   "generated": "adrenal-medulla",
+   "from": "adrenal-cortex-left"
+  },
+  {
+   "id": "adrenal-medulla-right",
+   "layer": "adrenal",
+   "side": "right",
+   "generated": "adrenal-medulla",
+   "from": "adrenal-cortex-right"
+  },
+  {
+   "id": "pancreas-head",
+   "layer": "pancreas",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_head_of_pancreas",
+    "VH_F_ucinate_process1"
+   ]
+  },
+  {
+   "id": "pancreas-neck",
+   "layer": "pancreas",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_neck_of_pancreas"
+   ]
+  },
+  {
+   "id": "pancreas-body",
+   "layer": "pancreas",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_body_of_pancreas"
+   ]
+  },
+  {
+   "id": "pancreas-tail",
+   "layer": "pancreas",
+   "side": "left",
+   "united": [
+    "VH_F_tail_of_pancreas"
+   ],
+   "sideCheck": true
+  },
+  {
+   "id": "pancreatic-duct",
+   "layer": "pancreas",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_ventral_pancreatic_duct",
+    "VH_F_dorsal_pancreatic_duct"
+   ]
+  },
+  {
+   "id": "ovary-left",
+   "layer": "ovary",
+   "side": "left",
+   "united": [
+    "VH_F_left_ovary"
+   ]
+  },
+  {
+   "id": "ovary-right",
+   "layer": "ovary",
+   "side": "right",
+   "united": [
+    "VH_F_right_ovary"
+   ]
+  },
+  {
+   "id": "heart-atria",
+   "layer": "makers",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_left_cardiac_atrium",
+    "VH_F_right_cardiac_atrium"
+   ]
+  },
+  {
+   "id": "heart-ventricles",
+   "layer": "makers",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_left_ventricle",
+    "VH_F_right_ventricle"
+   ]
+  },
+  {
+   "id": "kidney-left",
+   "layer": "makers",
+   "side": "left",
+   "united": [
+    "VH_F_kidney_capsule_L"
+   ]
+  },
+  {
+   "id": "kidney-right",
+   "layer": "makers",
+   "side": "right",
+   "united": [
+    "VH_F_kidney_capsule_R"
+   ]
+  },
+  {
+   "id": "stomach",
+   "layer": "makers",
+   "side": "midline",
+   "sideCheck": false,
+   "fit": "abdomen",
+   "bp3d": [
+    "FJ2564"
+   ],
+   "mould": [
+    "liver",
+    "spleen",
+    "pancreas-body",
+    "pancreas-tail"
+   ]
+  },
+  {
+   "id": "duodenum",
+   "layer": "makers",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_duodenum_superior",
+    "VH_F_duodenum_descending",
+    "VH_F_duodenum_horizontal",
+    "VH_F_duodenum_ascending"
+   ]
+  },
+  {
+   "id": "liver",
+   "layer": "makers",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_capsule_of_the_liver"
+   ]
+  },
+  {
+   "id": "spleen",
+   "layer": "neighbours",
+   "side": "left",
+   "united": [
+    "VH_F_gastric_surface_of_spleen",
+    "VH_F_diaphragmatic_surface_of_spleen",
+    "VH_F_colic_surface_of_spleen",
+    "VH_F_hilum_of_spleen",
+    "VH_F_renal_surface_of_spleen"
+   ]
+  },
+  {
+   "id": "uterus",
+   "layer": "neighbours",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_fundus_of_uterus",
+    "VH_F_body_of_uterus",
+    "VH_F_lower_uterine_segment",
+    "VH_F_cervix"
+   ]
+  },
+  {
+   "id": "uterine-tube-left",
+   "layer": "neighbours",
+   "side": "left",
+   "united": [
+    "VH_F_ampulla_of_uterine_tube_L",
+    "VH_F_isthmus_of_fallopian_tube_L",
+    "VH_F_uterine_tube_infundibulum_L",
+    "VH_F_fibria_of_uterine_tube_L"
+   ],
+   "simplify": 0.4,
+   "maxError": 0.008
+  },
+  {
+   "id": "uterine-tube-right",
+   "layer": "neighbours",
+   "side": "right",
+   "united": [
+    "VH_F_ampulla_of_uterine_tube_R",
+    "VH_F_isthmus_of_fallopian_tube_R",
+    "VH_F_uterine_tube_infundibulum_R",
+    "VH_F_fibria_of_uterine_tube_R"
+   ],
+   "simplify": 0.4,
+   "maxError": 0.008
+  },
+  {
+   "id": "ascending-aorta",
+   "layer": "artery",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_ascending_aorta"
+   ]
+  },
+  {
+   "id": "aortic-arch",
+   "layer": "artery",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_aortic_arch"
+   ]
+  },
+  {
+   "id": "thoracic-aorta",
+   "layer": "artery",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_descending_aorta_a"
+   ]
+  },
+  {
+   "id": "abdominal-aorta",
+   "layer": "artery",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_descending_aorta_b"
+   ]
+  },
+  {
+   "id": "brachiocephalic-trunk",
+   "layer": "artery",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_brachiocephalic_artery_a",
+    "VH_F_brachiocephalic_artery_b"
+   ]
+  },
+  {
+   "id": "common-carotid-artery-left",
+   "layer": "artery",
+   "side": "left",
+   "united": [
+    "VH_F_left_common_carotid_artery_a",
+    "VH_F_left_common_carotid_artery_b"
+   ]
+  },
+  {
+   "id": "common-carotid-artery-right",
+   "layer": "artery",
+   "side": "right",
+   "fit": "neck",
+   "bp3d": [
+    "FJ3564"
+   ]
+  },
+  {
+   "id": "subclavian-artery-left",
+   "layer": "artery",
+   "side": "left",
+   "united": [
+    "VH_F_left_subclavian_artery_a",
+    "VH_F_left_subclavian_artery_b"
+   ]
+  },
+  {
+   "id": "subclavian-artery-right",
+   "layer": "artery",
+   "side": "right",
+   "fit": "neck",
+   "bp3d": [
+    "FJ3579"
+   ]
+  },
+  {
+   "id": "internal-carotid-artery-left",
+   "layer": "artery",
+   "side": "left",
+   "fit": "head",
+   "bp3d": [
+    "FJ1682M"
+   ]
+  },
+  {
+   "id": "internal-carotid-artery-right",
+   "layer": "artery",
+   "side": "right",
+   "fit": "head",
+   "bp3d": [
+    "FJ1682"
+   ]
+  },
+  {
+   "id": "inferior-thyroid-artery-left",
+   "layer": "artery",
+   "side": "left",
+   "fit": "neck",
+   "bp3d": [
+    "FJ2210",
+    "FJ2255"
+   ]
+  },
+  {
+   "id": "inferior-thyroid-artery-right",
+   "layer": "artery",
+   "side": "right",
+   "fit": "neck",
+   "bp3d": [
+    "FJ2209",
+    "FJ2307"
+   ]
+  },
+  {
+   "id": "suprarenal-arteries-left",
+   "layer": "artery",
+   "side": "left",
+   "fit": "kidney-left",
+   "bp3d": [
+    "FJ3467",
+    "FJ3472"
+   ]
+  },
+  {
+   "id": "suprarenal-arteries-right",
+   "layer": "artery",
+   "side": "right",
+   "fit": "kidney-right",
+   "bp3d": [
+    "FJ3584",
+    "FJ3586"
+   ]
+  },
+  {
+   "id": "renal-artery-left",
+   "layer": "artery",
+   "side": "left",
+   "united": [
+    "VH_F_left_renal_artery"
+   ]
+  },
+  {
+   "id": "renal-artery-right",
+   "layer": "artery",
+   "side": "right",
+   "united": [
+    "VH_F_right_renal_artery"
+   ]
+  },
+  {
+   "id": "celiac-trunk",
+   "layer": "artery",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_celiac_trunk"
+   ]
+  },
+  {
+   "id": "splenic-artery",
+   "layer": "artery",
+   "side": "left",
+   "united": [
+    "VH_F_splenic_artery"
+   ]
+  },
+  {
+   "id": "pulmonary-trunk",
+   "layer": "artery",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_pulmonary_trunk",
+    "VH_F_pulmonary_artery_L",
+    "VH_F_pulmonary_artery_R"
+   ]
+  },
+  {
+   "id": "superior-vena-cava",
+   "layer": "vein",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_superior_vena_cava"
+   ]
+  },
+  {
+   "id": "inferior-vena-cava",
+   "layer": "vein",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_inferior_vena_cava_a",
+    "VH_F_inferior_vena_cava_b"
+   ]
+  },
+  {
+   "id": "brachiocephalic-vein-left",
+   "layer": "vein",
+   "side": "left",
+   "fit": "neck",
+   "bp3d": [
+    "FJ3482"
+   ],
+   "sideCheck": false
+  },
+  {
+   "id": "brachiocephalic-vein-right",
+   "layer": "vein",
+   "side": "right",
+   "fit": "neck",
+   "bp3d": [
+    "FJ3583"
+   ]
+  },
+  {
+   "id": "internal-jugular-vein-left",
+   "layer": "vein",
+   "side": "left",
+   "fit": "neck",
+   "bp3d": [
+    "FJ3485"
+   ]
+  },
+  {
+   "id": "internal-jugular-vein-right",
+   "layer": "vein",
+   "side": "right",
+   "fit": "neck",
+   "bp3d": [
+    "FJ3585"
+   ]
+  },
+  {
+   "id": "suprarenal-vein-left",
+   "layer": "vein",
+   "side": "left",
+   "fit": "kidney-left",
+   "bp3d": [
+    "FJ3480"
+   ]
+  },
+  {
+   "id": "suprarenal-vein-right",
+   "layer": "vein",
+   "side": "right",
+   "fit": "kidney-right",
+   "bp3d": [
+    "FJ3580"
+   ]
+  },
+  {
+   "id": "renal-vein-left",
+   "layer": "vein",
+   "side": "left",
+   "united": [
+    "VH_F_left_renal_vein"
+   ]
+  },
+  {
+   "id": "renal-vein-right",
+   "layer": "vein",
+   "side": "right",
+   "united": [
+    "VH_F_right_renal_vein"
+   ]
+  },
+  {
+   "id": "splenic-vein",
+   "layer": "vein",
+   "side": "left",
+   "united": [
+    "VH_F_splenic_vein"
+   ]
+  },
+  {
+   "id": "hepatic-portal-vein",
+   "layer": "vein",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_hepatic_portal_vein",
+    "VH_F_right_branch_of_portal_vein",
+    "VH_F_left_branch_of_portal_vein"
+   ]
+  },
+  {
+   "id": "hepatic-veins",
+   "layer": "vein",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_right_hepatic_vein",
+    "VH_F_middle_hepatic_vein",
+    "VH_F_left_hepatic_vein"
+   ]
+  },
+  {
+   "id": "pulmonary-veins",
+   "layer": "vein",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_pulmonary_vein_L_sup",
+    "VH_F_pulmonary_vein_L_inf",
+    "VH_F_pulmonary_vein_R_sup",
+    "VH_F_pulmonary_vein_R_inf"
+   ]
+  },
+  {
+   "id": "thyroid-cartilage",
+   "layer": "airway",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_thyroid_cartilage"
+   ]
+  },
+  {
+   "id": "cricoid-cartilage",
+   "layer": "airway",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_cricoid_cartilage"
+   ]
+  },
+  {
+   "id": "trachea",
+   "layer": "airway",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_trachea",
+    "VH_F_tracheal_cartilage"
+   ]
+  },
+  {
+   "id": "hyoid-bone",
+   "layer": "airway",
+   "side": "midline",
+   "sideCheck": false,
+   "fit": "neck",
+   "bp3d": [
+    "FJ2772"
+   ]
+  },
+  {
+   "id": "thalamus-left",
+   "layer": "brain",
+   "side": "left",
+   "united": [
+    "Allen_thalamus_R"
+   ],
+   "simplify": 0.4,
+   "maxError": 0.008
+  },
+  {
+   "id": "thalamus-right",
+   "layer": "brain",
+   "side": "right",
+   "united": [
+    "Allen_thalamus_L"
+   ],
+   "simplify": 0.4,
+   "maxError": 0.008
+  },
+  {
+   "id": "third-ventricle",
+   "layer": "brain",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "Allen_third_ventricle_L",
+    "Allen_third_ventricle_R"
+   ]
+  },
+  {
+   "id": "cerebrum-left",
+   "layer": "cerebrum",
+   "side": "left",
+   "united": [
+    "Allen_white_matter_of_forebrain_R"
+   ],
+   "simplify": 0.15,
+   "maxError": 0.01
+  },
+  {
+   "id": "cerebrum-right",
+   "layer": "cerebrum",
+   "side": "right",
+   "united": [
+    "Allen_white_matter_of_forebrain_L"
+   ],
+   "simplify": 0.15,
+   "maxError": 0.01
+  },
+  {
+   "id": "cerebellum",
+   "layer": "cerebrum",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "Allen_lateral_hemisphere_of_cerebellum_L",
+    "Allen_lateral_hemisphere_of_cerebellum_R",
+    "Allen_cerebellar_vermis_L",
+    "Allen_cerebellar_vermis_R",
+    "Allen_paravermis_of_cerebellum_L",
+    "Allen_paravermis_of_cerebellum_R"
+   ],
+   "simplify": 0.3,
+   "maxError": 0.01
+  },
+  {
+   "id": "brainstem",
+   "layer": "brain",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "Allen_midbrain_tegmentum_L",
+    "Allen_midbrain_tegmentum_R",
+    "Allen_tegmentum_of_medulla_oblongata_L",
+    "Allen_tegmentum_of_medulla_oblongata_R",
+    "Allen_pyramidal_part_of_medulla_oblongata_L",
+    "Allen_pyramidal_part_of_medulla_oblongata_R"
+   ]
+  },
+  {
+   "id": "cervical-spine",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_cervical_vertebra_1",
+    "VH_F_cervical_vertebra_2",
+    "VH_F_cervical_vertebra_3",
+    "VH_F_cervical_vertebra_4",
+    "VH_F_cervical_vertebra_5",
+    "VH_F_cervical_vertebra_6",
+    "VH_F_cervical_vertebra_7"
+   ],
+   "simplify": 0.3,
+   "maxError": 0.01
+  },
+  {
+   "id": "thoracic-spine",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_thoracic_vertebra_1",
+    "VH_F_thoracic_vertebra_2",
+    "VH_F_thoracic_vertebra_3",
+    "VH_F_thoracic_vertebra_4",
+    "VH_F_thoracic_vertebra_5",
+    "VH_F_thoracic_vertebra_6",
+    "VH_F_thoracic_vertebra_7",
+    "VH_F_thoracic_vertebra_8",
+    "VH_F_thoracic_vertebra_9",
+    "VH_F_thoracic_vertebra_10",
+    "VH_F_thoracic_vertebra_11",
+    "VH_F_thoracic_vertebra_12"
+   ],
+   "simplify": 0.3,
+   "maxError": 0.01
+  },
+  {
+   "id": "lumbar-spine",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_lumbar_vertebra_1",
+    "VH_F_lumbar_vertebra_2",
+    "VH_F_lumbar_vertebra_3",
+    "VH_F_lumbar_vertebra_4",
+    "VH_F_lumbar_vertebra_5",
+    "VH_F_lumbar_vertebra_6"
+   ],
+   "simplify": 0.3,
+   "maxError": 0.01
+  },
+  {
+   "id": "sacrum",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_sacrum",
+    "VH_F_coccyx"
+   ],
+   "simplify": 0.3,
+   "maxError": 0.01
+  },
+  {
+   "id": "sphenoid-bone",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "fit": "head",
+   "bp3d": [
+    "FJ3394"
+   ]
+  },
+  {
+   "id": "skull",
+   "layer": "skeleton",
+   "side": "midline",
+   "sideCheck": false,
+   "fit": "head",
+   "bp3d": [
+    "FJ3200",
+    "FJ3274",
+    "FJ3380",
+    "FJ3309",
+    "FJ3281",
+    "FJ3386",
+    "FJ3199",
+    "FJ3269",
+    "FJ3375",
+    "FJ3287",
+    "FJ3392",
+    "FJ3272",
+    "FJ3378",
+    "FJ3273",
+    "FJ3379",
+    "FJ3395",
+    "FJ3265",
+    "FJ3371"
+   ],
+   "simplify": 0.45
+  },
+  {
+   "id": "mandible",
+   "layer": "skeleton",
+   "side": "midline",
+   "sideCheck": false,
+   "fit": "head",
+   "bp3d": [
+    "FJ3289"
+   ],
+   "simplify": 0.45
+  },
+  {
+   "id": "ribs-left",
+   "layer": "skeleton",
+   "side": "left",
+   "fit": "thorax",
+   "bp3d": [
+    "FJ3228",
+    "FJ3229",
+    "FJ3230",
+    "FJ3231",
+    "FJ3232",
+    "FJ3233",
+    "FJ3234",
+    "FJ3235",
+    "FJ3236",
+    "FJ3225",
+    "FJ3226",
+    "FJ3227"
+   ],
+   "simplify": 0.45
+  },
+  {
+   "id": "ribs-right",
+   "layer": "skeleton",
+   "side": "right",
+   "fit": "thorax",
+   "bp3d": [
+    "FJ3334",
+    "FJ3336",
+    "FJ3338",
+    "FJ3340",
+    "FJ3342",
+    "FJ3344",
+    "FJ3346",
+    "FJ3347",
+    "FJ3348",
+    "FJ3330",
+    "FJ3331",
+    "FJ3332"
+   ],
+   "simplify": 0.45
+  },
+  {
+   "id": "sternum",
+   "layer": "skeleton",
+   "side": "midline",
+   "sideCheck": false,
+   "fit": "thorax",
+   "bp3d": [
+    "FJ3290",
+    "FJ3178",
+    "FJ3153"
+   ],
+   "simplify": 0.45
+  },
+  {
+   "id": "clavicle-left",
+   "layer": "skeleton",
+   "side": "left",
+   "fit": "thorax",
+   "bp3d": [
+    "FJ3237"
+   ]
+  },
+  {
+   "id": "clavicle-right",
+   "layer": "skeleton",
+   "side": "right",
+   "fit": "thorax",
+   "bp3d": [
+    "FJ3362"
+   ]
+  },
+  {
+   "id": "hip-bone-left",
+   "layer": "skeleton",
+   "side": "left",
+   "fit": "pelvis",
+   "bp3d": [
+    "FJ3288"
+   ]
+  },
+  {
+   "id": "hip-bone-right",
+   "layer": "skeleton",
+   "side": "right",
+   "fit": "pelvis",
+   "bp3d": [
+    "FJ3152"
+   ]
+  }
+ ],
+ "registration": {
+  "$comment": "Similarity transforms (rotation, uniform scale, shift) fitted by Horn's method on landmark centroids. 'head': BodyParts3D thalami, hypothalamus, midbrain, pineal, cerebellum and medulla onto the HRA (Allen) brain, which places the pituitary, sphenoid, skull and internal carotids. 'neck': thyroid and cricoid cartilage and C3 to T2 onto the HRA larynx and spine. 'thorax': T1 to T12. 'abdomen': T10 to L2. 'pelvis': the lowest three lumbar vertebrae and the sacrum (this body has six lumbar vertebrae, so BodyParts3D L3 to L5 pair with HRA L4 to L6). 'kidney-left'/'kidney-right' (as in the kidney lab) refine by ICP of the BodyParts3D kidney onto the HRA kidney capsule, which places the adrenal glands and their vessels.",
+  "fits": {
+   "head": {
+    "maxRmsMm": 8,
+    "pairs": [
+     [
+      "FJ1782",
+      [
+       "Allen_thalamus_R"
+      ]
+     ],
+     [
+      "FJ1827",
+      [
+       "Allen_thalamus_L"
+      ]
+     ],
+     [
+      "FJ1760",
+      [
+       "Allen_hypothalamus_R"
+      ]
+     ],
+     [
+      "FJ1808",
+      [
+       "Allen_hypothalamus_L"
+      ]
+     ],
+     [
+      "FJ1770",
+      [
+       "Allen_midbrain_tegmentum_R"
+      ]
+     ],
+     [
+      "FJ1817",
+      [
+       "Allen_midbrain_tegmentum_L"
+      ]
+     ],
+     [
+      "FJ1795",
+      [
+       "Allen_pineal_body_L",
+       "Allen_pineal_body_R"
+      ]
+     ],
+     [
+      "FJ1781",
+      [
+       "Allen_lateral_hemisphere_of_cerebellum_R",
+       "Allen_paravermis_of_cerebellum_R"
+      ]
+     ],
+     [
+      "FJ1830",
+      [
+       "Allen_lateral_hemisphere_of_cerebellum_L",
+       "Allen_paravermis_of_cerebellum_L"
+      ]
+     ],
+     [
+      "FJ1769",
+      [
+       "Allen_tegmentum_of_medulla_oblongata_R",
+       "Allen_pyramidal_part_of_medulla_oblongata_R"
+      ]
+     ],
+     [
+      "FJ1831",
+      [
+       "Allen_tegmentum_of_medulla_oblongata_L",
+       "Allen_pyramidal_part_of_medulla_oblongata_L"
+      ]
+     ]
+    ]
+   },
+   "neck": {
+    "maxRmsMm": 8,
+    "pairs": [
+     [
+      "FJ2808",
+      [
+       "VH_F_thyroid_cartilage"
+      ]
+     ],
+     [
+      "FJ2440",
+      [
+       "VH_F_cricoid_cartilage"
+      ]
+     ],
+     [
+      "FJ3161",
+      [
+       "VH_F_cervical_vertebra_3"
+      ]
+     ],
+     [
+      "FJ3164",
+      [
+       "VH_F_cervical_vertebra_4"
+      ]
+     ],
+     [
+      "FJ3167",
+      [
+       "VH_F_cervical_vertebra_5"
+      ]
+     ],
+     [
+      "FJ3170",
+      [
+       "VH_F_cervical_vertebra_6"
+      ]
+     ],
+     [
+      "FJ3172",
+      [
+       "VH_F_cervical_vertebra_7"
+      ]
+     ],
+     [
+      "FJ3158",
+      [
+       "VH_F_thoracic_vertebra_1"
+      ]
+     ],
+     [
+      "FJ3160",
+      [
+       "VH_F_thoracic_vertebra_2"
+      ]
+     ]
+    ]
+   },
+   "thorax": {
+    "maxRmsMm": 10,
+    "pairs": [
+     [
+      "FJ3158",
+      [
+       "VH_F_thoracic_vertebra_1"
+      ]
+     ],
+     [
+      "FJ3160",
+      [
+       "VH_F_thoracic_vertebra_2"
+      ]
+     ],
+     [
+      "FJ3163",
+      [
+       "VH_F_thoracic_vertebra_3"
+      ]
+     ],
+     [
+      "FJ3166",
+      [
+       "VH_F_thoracic_vertebra_4"
+      ]
+     ],
+     [
+      "FJ3169",
+      [
+       "VH_F_thoracic_vertebra_5"
+      ]
+     ],
+     [
+      "FJ3171",
+      [
+       "VH_F_thoracic_vertebra_6"
+      ]
+     ],
+     [
+      "FJ3173",
+      [
+       "VH_F_thoracic_vertebra_7"
+      ]
+     ],
+     [
+      "FJ3174",
+      [
+       "VH_F_thoracic_vertebra_8"
+      ]
+     ],
+     [
+      "FJ3175",
+      [
+       "VH_F_thoracic_vertebra_9"
+      ]
+     ],
+     [
+      "FJ3154",
+      [
+       "VH_F_thoracic_vertebra_10"
+      ]
+     ],
+     [
+      "FJ3155",
+      [
+       "VH_F_thoracic_vertebra_11"
+      ]
+     ],
+     [
+      "FJ3156",
+      [
+       "VH_F_thoracic_vertebra_12"
+      ]
+     ]
+    ]
+   },
+   "abdomen": {
+    "maxRmsMm": 8,
+    "pairs": [
+     [
+      "FJ3154",
+      [
+       "VH_F_thoracic_vertebra_10"
+      ]
+     ],
+     [
+      "FJ3155",
+      [
+       "VH_F_thoracic_vertebra_11"
+      ]
+     ],
+     [
+      "FJ3156",
+      [
+       "VH_F_thoracic_vertebra_12"
+      ]
+     ],
+     [
+      "FJ3157",
+      [
+       "VH_F_lumbar_vertebra_1"
+      ]
+     ],
+     [
+      "FJ3159",
+      [
+       "VH_F_lumbar_vertebra_2"
+      ]
+     ]
+    ]
+   },
+   "pelvis": {
+    "maxRmsMm": 10,
+    "pairs": [
+     [
+      "FJ3162",
+      [
+       "VH_F_lumbar_vertebra_4"
+      ]
+     ],
+     [
+      "FJ3165",
+      [
+       "VH_F_lumbar_vertebra_5"
+      ]
+     ],
+     [
+      "FJ3168",
+      [
+       "VH_F_lumbar_vertebra_6"
+      ]
+     ],
+     [
+      "FJ3393",
+      [
+       "VH_F_sacrum"
+      ]
+     ]
+    ]
+   },
+   "kidney-left": {
+    "maxRmsMm": 8,
+    "icp": {
+     "bp3d": "FJ3145",
+     "united": "VH_F_kidney_capsule_L"
+    },
+    "pairs": [
+     [
+      "FJ3145",
+      [
+       "VH_F_kidney_capsule_L"
+      ]
+     ],
+     [
+      "FJ3476",
+      [
+       "VH_F_left_renal_artery"
+      ]
+     ],
+     [
+      "FJ3478",
+      [
+       "VH_F_left_renal_vein"
+      ]
+     ]
+    ]
+   },
+   "kidney-right": {
+    "maxRmsMm": 8,
+    "icp": {
+     "bp3d": "FJ3147",
+     "united": "VH_F_kidney_capsule_R"
+    },
+    "pairs": [
+     [
+      "FJ3147",
+      [
+       "VH_F_kidney_capsule_R"
+      ]
+     ],
+     [
+      "FJ3576",
+      [
+       "VH_F_right_renal_artery"
+      ]
+     ],
+     [
+      "FJ3578",
+      [
+       "VH_F_right_renal_vein"
+      ]
+     ]
+    ]
+   }
+  }
+ }
+}
