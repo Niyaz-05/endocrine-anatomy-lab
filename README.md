@@ -2,6 +2,8 @@
 
 **Live:** https://endocrine-anatomy-lab.vercel.app
 
+Works on phones and tablets: the details rise from the bottom in a sheet you can drag, fold or close with a swipe down, and picking a structure frames it above the sheet.
+
 A realistic, interactive 3D endocrine system for secondary-school and first-year biology:
 
 - **Real look.** A pinkish-grey pituitary in the saddle of the sphenoid, a deep red-brown lobulated thyroid with tan parathyroids, yellow adrenal cortex round a red-brown medulla, a lobulated pale pancreas, pale ovaries, red arteries, blue-purple veins and ivory bone; the brain and the organs around the glands faded. "Colour" switches to **Glands** (one colour per layer) or **Hormone class** (peptide, amine or steroid).

@@ -28,7 +28,7 @@ const cameraButton = (page: Page, name: string) => page.locator('[aria-label="Ca
 const slider = (page: Page, name: RegExp) => page.getByRole('slider', { name });
 const num = async (page: Page, sel: string, attr: string) => Number(await page.locator(sel).first().getAttribute(attr));
 
-test('loads the endocrine system without console errors and with a clean main screen', async ({ page }) => {
+test('loads the endocrine system without console errors and with a clean main screen @smoke', async ({ page }) => {
   const errors = await open(page);
   await ready(page);
   await expect(page.getByRole('heading', { name: 'Endocrine System', level: 1 })).toBeVisible();
@@ -371,7 +371,7 @@ test('guided tour navigates forward, back, into a close-up, and finishes', async
   await expect(page.getByRole('button', { name: 'Anatomy' })).toHaveAttribute('aria-pressed', 'true');
 });
 
-test('phone layout: structures open from the dock and details follow a pick', async ({ page }) => {
+test('phone layout: structures open from the dock and details follow a pick @smoke', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await open(page);
   await ready(page);
@@ -400,7 +400,7 @@ test('the About sheet holds the HuBMAP and BodyParts3D credits', async ({ page }
   await expect(dialog).toHaveCount(0);
 });
 
-test('without WebGL the learning content still works', async ({ page }) => {
+test('without WebGL the learning content still works @smoke', async ({ page }) => {
   await open(page, '?nowebgl');
   await expect(page.getByRole('heading', { name: '3D view unavailable' })).toBeVisible();
   await listButton(page, /^Pineal gland$/).click();
